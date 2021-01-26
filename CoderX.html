@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <!--Powered | CoderX ©2020 | Andrei Abd
+    █▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+    █▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+    CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
+    mail      :  usr.g0a1@gmial.com
+    CoderX    :  https://coderx-project.blogspot.com/
+    Whatsapp  :  +963934820511
+    Pinterest :  https://www.pinterest.com/andreiabd93/
+    Instagram :  https://www.instagram.com/andrei_abd/
+    Linkeden  :  https://www.linkedin.com/in/andreiabd
+    Facebook  :  https://www.facebook.com/andreiaabd/
+    Github    :  https://github.com/AndreiAbd
+    -->
+
+    <!-- Font Awesome -->
+    <link 
+      rel="preconnect" 
+      href="https://fonts.gstatic.com"
+    />
+    
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" 
+      rel="stylesheet"
+    /> 
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link 
+      rel="preconnect" 
+      href="https://fonts.gstatic.com"
+    />
+    
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" 
+      rel="stylesheet"
+    /> 
+    
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap" 
+      rel="stylesheet"
+    />
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+    <!--Arabic Language-->
+    <meta 
+      charset="UTF-8"
+    >
+
+     <!--Devices All Screen-->
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0"
+    >
+    
+    <!--Web Site icon-->
+    <link  
+      rel="icon" 
+      href="Png/logo2.png"
+    />
+    
+  	<!--Google Search Console-->
+    <meta 
+      name="google-site-verification" 
+      content="44SR0WJt3L5SBIYr8qvqmbd-_7buOW_hQIVqcSoTkPs" />
+  
+    <!--Web Site SEO & Description & Tittle-->
+    <meta 
+      name="description" 
+      content="Andrei Abd - CoderX">
+    <meta 
+      name="keywords" 
+      content="Andrei Abd, CoderX, X, Coder">
+      <title>Andrei Abd | CoderX</title>
+    
+    <!--Loader image-->
+    <script
+      src="js/loader.js"
+    >
+    </script>
+
+    <!--CSS-->
+    <link 
+      rel="stylesheet" 
+      href="css/style.css"
+    >
+  </head>
+
+<body onload="startTime()">
+  <div id="dialogoverlay"></div>
+  <div id="dialogbox">
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfooter"></div>
+  </div>
+  <div id="line"></div>
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <div id="line"></div>
+      <a class="nav-link" id="btn-web-sites" href="#websites"><i class="fas fa-globe"></i> Websites</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="nav-link" id="btn-web-application" href="#web-application"><i class="fas fa-box-open"></i> Web Application</a>
+      <a class="nav-link" id="btn-android" href="#android"><i class="fab fa-android"></i> Android</a>
+      <a class="nav-link" id="btn-scripts" href="#scripts"><i class="fas fa-file-code"></i> Scripts</a>
+      <a class="nav-link" id="btn-artwork" href="#artwork"><i class="fas fa-images"></i> ArtWork</a>
+      <div id="line"></div>
+      <img id="logo"src="png/logo2.png" width="80%" style="margin-left: 30px;opacity: 50%;" alt="">
+    </div>    
+    <button class="btn" id="btn-side-nav" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Projects</button>
+
+    <div id="intro-main-page">
+      <div
+        id="intro-example"
+        class="p-5 text-center bg-image"
+        style="margin: 20px;height: 500px;"
+      >
+      <div class="mask" style="border: 2px solid #111;border-radius: 15px;">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <p 
+              class="mb-3" 
+              style="
+                color: #111111;
+                font-size: 18px;
+              "
+              id="logo"  
+            >
+              █▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+              <br>
+              █▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+            </p>
+            <div id="clockdate">
+              <div class="clockdate-wrapper">
+                <div id="clock"></div>
+                <div id="date"></div>
+              </div>
+            </div>
+            <h5 class="mb-4" style="color:#111;font-family: 'Orbitron', sans-serif;">Andrei Abd | CoderX</h5>
+
+            <a
+              class="btn"
+              role="button"
+              rel="nofollow"
+              id="btn-main-contact"
+              ><i class="fas fa-scroll"></i> Contact</a
+            >
+            <a
+              class="btn"
+              target="_blank"
+              id="btn-main-bio"
+              ><i class="fas fa-scroll"></i> Biograph</a
+            >
+            <a
+              class="btn"
+              target="_blank"
+              id="btn-main-certi"
+              ><i class="fas fa-scroll"></i> Certificates</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </header>
+  <main>
+    <div id="websites">
+      <div class="card">
+        <div class="card-header"><i class="fas fa-globe"></i> Websites</div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-apple-alt"></i> : مكتبة الفنون التشكيلية</h5>
+          <p class="card-text" dir="rtl">
+            يهدف موقع مكتبة الفنون التشكيلية بتزويد الراغبين من 
+            الباحثين و الفنانين و المهتمين بالمضمار الثقافي التشكيلي بالمعارف و الأبحاث و الكتب 
+            الإلكترونية الأجنبية منها و العربية على حد سواء، يقدم الموقع مجموعة من الأقسام المعنونة 
+            بأسماء تخص الفن التشكيلي على وجه الخصوص، و كل قسم من هذه الأقسام يحوي على الكتب 
+            المتخصصة وفق عنوان القسم المجهز به، ستبقى المكتبة التشكيلية في طريق ضمها لأكبر 
+            عدد ممكن من المعارف المخصصة للفنون على مقاييس المدارس و الأكاديميات حول العالم.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع الإستضافة : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-html5" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-css3-alt" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-js" style="font-size: 30px;"></i>
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl">رابط موقع <a href="https://andreiabd.github.io/FineArtLibrary/index.html" target="_blank">مكتبة الفنون التشكيلية.</a></p>
+            <p dir="rtl">صفحة الموقع <a href="https://www.facebook.com/fineartlibrarybooks" target="_blank">فيس بوك.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-apple-alt"></i> : مكتبة الفنون التطبيقية</h5>
+          <p class="card-text" dir="rtl">
+            يهدف موقع مكتبة الفنون التطبيقية بتزويد الراغبين من الباحثين و الفنانين و
+            المهتمين بالمضمار الثقافي التطبيقي بالمعارف و الأبحاث و الكتب الإلكترونية الأجنبية منها و
+              العربية على حد سواء، يقدم الموقع مجموعة من الأقسام المعنونة بأسماء تخص الفن
+              التطبيقية على وجه الخصوص، و كل قسم من هذه الأقسام يحوي على الكتب المتخصصة
+              وفق عنوان القسم المجهز به، ستبقى المكتبة التطبيقية في طريق ضمها لأكبر عدد
+              ممكن من المعارف المخصصة للفنون على مقاييس المدارس و الأكاديميات حول العالم.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع الإستضافة : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-html5" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-css3-alt" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-js" style="font-size: 30px;"></i>
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl">رابط موقع <a href="https://andreiabd.github.io/AppliedArtLibrary/index.html" target="_blank">مكتبة الفنون التطبيقية.</a></p>
+            <p dir="rtl">صفحة الموقع <a href="https://www.facebook.com/appliedartlibrarybooks" target="_blank">فيس بوك.</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="web-application">
+      <div class="card">
+        <div class="card-header"><i class="fas fa-box-open"></i> Web Application</div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="far fa-file-code"></i> : Coder Note</h5>
+          <p class="card-text" dir="rtl">
+            موقع مفكرة المبرمج، يتيح هذا الموقع تطبيق بسيط لتعديل و كتابة أكواد 
+            javascrip, html, css, من خلال لوحة التحكم التي تقوم بإظهار النتائج ضمن شاشة مستقلة.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع الإستضافة : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-html5" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-css3-alt" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-js" style="font-size: 30px;"></i>
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl">رابط موقع <a href="https://andreiabd.github.io/CoderNote/index.html" target="_blank">Coder Note.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-broadcast-tower"></i> : Radio Wave</h5>
+          <p class="card-text" dir="rtl">
+            موقع موجة الراديو، الموقع يقدم محطات بث راديوية عالمية ضمن تطبيق يتيح للمستخدم
+             بسهولة التنقل بين محطات البث المعنونة بأسماء القنوات إضافة إلى ميزة التحكم بالصوت و سرعته .
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع الإستضافة : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-html5" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-css3-alt" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-js" style="font-size: 30px;"></i>
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl">رابط موقع <a href="https://radiowave-online.blogspot.com" target="_blank">Radio Wave</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-lock-open"></i> : Radio Wave</h5>
+          <p class="card-text" dir="rtl">
+            يقدم الموقع تشفير لجميع انواع النصوص بصيغ MD5 و صيغة SHA1 . وفق اختيار المستخدم، وهذه الأنواع
+             من التشفيرات غير قابلة للعكس ، إضافة إلى إمكانية استخدام
+             ميزة التشفير من نوع OPENSSL و التي تحتاج لإنشائها إلى مصطلح خوارزمية التشفير إضافة إلى نوع الإمتداد المحسوب بصيغة 
+             bit و هذا النوع من
+              التشفير بالإمكان عكسه و استخراج النص المشفر بسهولة إذا استطعت معرفة مفتاح و نوع التشفير المستخدم ضمن هذا النوع.
+            <br>
+            ميزات إضافية : صيغ التشفير غير قابلة للعكس و تحتاج لمهارة و اجهزة متطورة لكسرها لكن
+             من خلال ميزة التخمين يستطيع المستخدم إنشاء علاقة بين نوع التشفير المستخدم و ربطه مع أي نوع من
+              النصوص التي يختارها بغرض التحقق من إمكانية التطابق بين الصيغة النصية و الصيغة المشفرة.
+            <br>
+              <p style="color: tomato;" dir="rtl"><i class="fas fa-exclamation-triangle"></i> يرجى من جميع الزوار عدم استخدام هذا الموقع
+                للأمور الغير أخلاقية حيث يعتبر الموقع و المبرمج غير مسؤولين عن أي فعل ضار تجاه أي جهة كانت.
+              </p>
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع الإستضافة : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-html5" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-css3-alt" style="font-size: 30px;"></i>&nbsp;&nbsp;
+              <i class="fab fa-php" style="font-size: 30px;"></i>
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl">رابط موقع <a href="http://crypto-hashdata.000webhostapp.com/" target="_blank">Crypto</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="android">
+      <div class="card">
+        <div class="card-header"><i class="fab fa-android"></i> Android</div>
+        <div class="card-body">
+          <p style="color: tomato;" dir="rtl">
+            <i class="fas fa-exclamation-triangle"></i> للتنويه التطبيقات غير مسجلة ضمن متجر Google Play بسبب حالة الحظر و العقوبات على سوريا.
+          </p>
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-mobile-alt"></i> : Fine Art Library</h5>
+          <p class="card-text" dir="rtl">
+            تطبيق مكتبة الفنون التشكيلية المخصص لأنظمة الأندرويد.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع التطبيق : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-java" style="font-size: 30px;"></i></i>&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/FineArtLibrary-apk" target="_blank">Fine Art Library apk.</a></p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://drive.google.com/file/d/1pTgEgCrrz4eJLYbVXKdoLSQr6dCrG6gB/view?usp=sharing" target="_blank">Fine Art Library apk.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-mobile-alt"></i> : Applied Art Library</h5>
+          <p class="card-text" dir="rtl">
+            تطبيق مكتبة الفنون التطبيقية المخصص لأنظمة الأندرويد.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع التطبيق : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-java" style="font-size: 30px;"></i></i>&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/AppliedArtLibrary-apk" target="_blank">Applied Art Library apk.</a></p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://drive.google.com/file/d/1PP6CVSLVGhOd8SeSpt8WI29c8-_yQ7ZK/view?usp=sharing" target="_blank">Applied Art Library apk.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-mobile-alt"></i> : Radio Wave</h5>
+          <p class="card-text" dir="rtl">
+            تطبيق موجة راديو المخصص لأنظمة الأندرويد.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع التطبيق : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              <i class="fab fa-java" style="font-size: 30px;"></i></i>&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://drive.google.com/file/d/1JpyvrQ5Y5D2UwGVVHWIyzf46MaKXG4mb/view?usp=sharing" target="_blank">Radio Wave apk.</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="scripts">
+      <div class="card">
+        <div class="card-header"><i class="fas fa-file-code"></i> Scrpits</div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fab fa-windows"></i> : Windows</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Usb Flash Tool : يخصص هذا البرنامج لإجراء تنظيف و إعادة تهيئة للذاكرة الوميضية أو الذواكر الداخلية على حد سواء.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Batsh&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/UsbFlashMemory" target="_blank">Usb Flash Memory.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fab fa-windows"></i> : Windows</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Wifi Extractor : يختص هذا البرنامج في إستخراج اسماء الشبكات و كافة المعلومات المتعلقة بها - النوع، الإسم، كلمة المرور وذلك ضمن إختيار المستخدم لإحدى الأوامر الموجودة في الصفحة الرئيسية للبرنامج، أو الحصول على معلومات بسرع أكبر من خلال ضغطة زر واحدة للفأرة.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Batsh&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/WifiExtractor" target="_blank">Usb Flash Memory.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fab fa-linux"></i> : Linux</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Auto Linux : يخصص هذا البرنامج الذي صمم بطريقة السكريبت لإنشاء تحديث ألي لجميع أنظمة Debian.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Bash&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/autoLinux" target="_blank">Auto Linux.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fab fa-linux"></i> : Linux</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Local Scanner : يخصص هذا البرنامج لإجراء فحص ألي للشبكة المحلية وذلك ضمن خياريين، الأول إجراء مسح للشبكة المحلة و ذلك لمرة واحدة فقط، أو إجراء اكثر من فحص ضمن فترات يحددها المستخدم.
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Bash&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/LocalScanner" target="_blank">Local Scanner.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fab fa-linux"></i> : Linux</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Ping Sweep : يخصص هذا البرنامج لإجراء
+             فحص على الشبكات المحلية بالإعتماد على خاصية الPING في إرسال البيانات إلى الأجهزة
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Bash&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/PingSweep" target="_blank">Ping Sweep.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fab fa-linux"></i> : Linux</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Mac Changer : يخصص هذا البرنامج لتغيير عنوان الماك
+             للأجهزة أثناء اتصالها بشبكة الإنترنت، حيث يجرى تعديل عنوان 
+            الماك على الشبكة المحلية وفق لثلاث خيارات يقدمها هذا 
+            البرنامج، الخيار الأول تعديل اسم الماك بطريقة عشوائية،
+             الخيار الثاني يتيح التعديل لعنوان الماك بطريقة يدوية،
+             ومن خلال الخيار الثالث يستطيع المستخدم تعديل عنوان الماك
+             لأكثر من مرة وفق زمن يحدده مسبقاً أثناء توليد عامل التكرار
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Bash&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/macChanger" target="_blank">Mac Changer.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-terminal"></i> : Termux</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Auto Termux : يستخدم هذا البرنامج الذي صمم بطريقة السكريبت لإنشاء تحديث ألي لتطبيق Termux المخصص لأجهزة الأندرويد
+            <br>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Bash&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/autoTermux" target="_blank">Auto Termux.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-terminal"></i> : Termux</h5>
+          <p class="card-text" dir="rtl">
+            <i class="fas fa-desktop"></i> Termux X : يستخدم هذا
+             البرنامج الذي صمم بطريقة السكريبت لإنشاء تحديث ألي لتطبيق 
+             Termux المخصص لأجهزة الأندرويد
+            <p dir="rtl">ميزات إضافية : تفعيل خاصية المستخدم الخارق، عبر تخصيص التفعيل لملفات الجذر الخاص للأندرويد، كما بالإمكان 
+              إنشاء نسخ إحتياطية بأسماء البرامج التي سبق و قام المستخدم بتثبيتها.
+            </p>
+            <p dir="rtl"><i class="fas fa-table"></i> نوع السكريبت : مجاني.</p>
+            <p dir="rtl">
+              <i class="fas fa-code"></i> اللغات المستخدمة:&nbsp;&nbsp;
+              Bash&nbsp;&nbsp;
+            </p>
+            <p dir="rtl"><i class="fas fa-info"></i> لمزيد من المعلومات : </p>
+            <p dir="rtl"><i class="fas fa-link"></i> رابط التحميل <a href="https://github.com/AndreiAbd/tremuxX" target="_blank">Termux X.</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="artwork">
+      <div class="card">
+        <div class="card-header"><i class="fas fa-images"></i> Artwork</div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-image"></i> : Restor</h5>
+          <p class="card-text" dir="rtl">
+            <p dir="rtl"><i class="fas fa-info"></i> جميع الأعمال متوفرة عبر الرابط : </p>
+            <p dir="rtl">رابط الموقع <a href="https://www.pinterest.com/andreiabd93/" target="_blank">Restor Artwork.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-image"></i> : Vector</h5>
+          <p class="card-text" dir="rtl">
+            <p dir="rtl"><i class="fas fa-info"></i> جميع الأعمال متوفرة عبر الرابط : </p>
+            <p dir="rtl">رابط الموقع <a href="https://www.pinterest.com/andreiabd93/" target="_blank">Vector Artwork.</a></p>
+          </p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" dir="rtl" style="font-weight: bold;color: #111;"><i class="fas fa-image"></i> : ASCII</h5>
+          <p class="card-text" dir="rtl">
+            <p dir="rtl"><i class="fas fa-info"></i> جميع الأعمال متوفرة عبر الرابط : </p>
+            <p dir="rtl">رابط الموقع <a href="https://www.pinterest.com/andreiabd93/" target="_blank">ASCII Artwork.</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="d-flex justify-content-center align-items-center">
+      <div id="icons-footer">
+        <a href="https://github.com/AndreiAbd" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/andreiabd" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.facebook.com/andreiaabd/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/andrei_abd/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.pinterest.com/andreiabd93/" target="_blank">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </div>
+    </div>
+    <div id="line"></div>
+  </footer>
+ 
+  <!--Loader Page-->
+ <div class="loader">
+    <div id="logo-loader">
+      <img src="Png/logo2.png"width="150px" height="150px"/>
+    </div>
+  </div>
+    <!-- back to top btn -->
+    <button 
+      id="back-to-top-btn"
+    >
+      <i class="fas fa-angle-double-up"></i>
+      </button>
+
+<script
+  type="text/javascript"
+  src="js/script.js"
+></script>
+
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.1.0/mdb.min.js"
+></script>
+
+</body>
+</html>
